@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">GreenPieces</string>
+    <string name="action_settings">Settings</string>
+    <string name="Title">Project Pacman</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="scan_button">Scan a UPC</string>
+    <string name="plastic_button">Plastic Recycling</string>
+    <string name="about_button">About the App</string>
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="about_plastics_header">There are many kinds of plastics. For recycling purposes
+        they are grouped into 7 different categories. Tap a category to learn more about it.</string>
+    <string name="code1">Number: 1\nName: PETE or PET\nRecyclable: Yes\nCharacteristics: Usually clear, often used in pop and water bottles\nRecycled Into: Totes,Carpet,Paneling,Fiber,Fleece</string>
+    <string name="code2">Number: 2\nName: HDPE\nRecyclable: Yes\nCharacteristics: Usually not clear, used in milk jugs, yogurt containers, juice bottles\nRecycled Into: Pens,Fencing,Recycling Containers</string>
+    <string name="code3">Number: 3\nName: V or PVC\nRecyclable: Yes (in some places)\nCharacteristics: Used in Shampoo Bottles, windows, clear food packaging\nRecycled Into: Paneling, flooring, decks</string>
+    <string name="code4">Number: 4\nName: LDPE\nRecyclable: Yes\nCharacteristics: Used in squeezable bottles, shopping bags, bread bags\nRecycled Into: Trash bags, trash cans, plastic envelopes</string>
+    <string name="code5">Number: 5\nName: PP\nRecyclable: Yes\nCharacteristics: Used in yogurt containers, ketchup bottles, medicine bottles\nRecycled Into: Brooms, ice scrapers, bicycle racks</string>
+    <string name="code6">Number: 6\nName: Styrofoam\nRecyclable: No\nCharacteristics: Used in egg cartons, meat trays, disposable cups and plates\nRecycled Into: egg cartons, foam packing, insulation</string>
+    <string name="code7">Number: 7\nName: Other\nRecyclable: No\nCharacteristics: Plastics that don\'t fit into other categories\nRecycled Into: Plastic lumber and other custom-made products</string>
+</resources>

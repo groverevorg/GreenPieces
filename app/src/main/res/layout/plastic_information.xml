@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#764497"
+              android:gravity="center_horizontal"
+              tools:context=".PlasticInformation"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_plastics_header"
+        android:id="@+id/about_plastics_txt"
+        android:textColor="#ffffff"
+        android:textSize="10pt"
+        android:textAlignment="center"
+        android:paddingBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2673"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number1_button"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2674"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number2_button"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2675"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number3_button"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2676"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number4_button"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2677"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number5_button"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2678"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number6_button"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="\u2679"
+            android:background="#fcd22a"
+            android:textSize="18pt"
+            android:textColor="#2f8d4e"
+            android:id="@+id/number7_button"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:editable="false"
+        android:id="@+id/plastic_info_text"
+        android:textColor="#2db7ea"
+        android:textSize="18pt"
+        android:textStyle="bold"/>
+</LinearLayout>

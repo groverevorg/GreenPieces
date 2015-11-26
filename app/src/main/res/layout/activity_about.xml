@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:id="@+id/linearLayout1"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:layout_width="fill_parent"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+    <Button
+        android:id="@+id/btnLucas"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/lucas"
+        android:text="Lucas"
+        android:textColor="#2f8d4e"
+        android:gravity="top|center"
+        android:textSize="14pt"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnThomas"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/thomas"
+        android:text="Thomas"
+        android:textColor="#2db7ea"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+    <Button
+        android:id="@+id/btnAdam"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/adam"
+        android:text="Adam"
+        android:textColor="#fcd22a"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+
+</LinearLayout>
+
+<LinearLayout android:id="@+id/linearLayout2"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:layout_width="fill_parent"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+    <Button
+        android:id="@+id/btnAidan"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/aidan"
+        android:text="Aidan"
+        android:textColor="#2db7ea"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+    <Button
+        android:id="@+id/btnCullen"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/cullen"
+        android:text="Cullen"
+        android:textColor="#fcd22a"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+    <Button
+        android:id="@+id/btnAdrian"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/adrian"
+        android:text="Adrian"
+        android:textColor="#2f8d4e"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+
+</LinearLayout>
+
+<LinearLayout android:id="@+id/linearLayout3"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:layout_width="fill_parent"
+              android:orientation="horizontal"
+              android:weightSum="3">
+
+    <Button
+        android:id="@+id/btnLuca"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/luca"
+        android:text="Luca"
+        android:textColor="#fcd22a"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+    <Button
+        android:id="@+id/btnSantana"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/santana"
+        android:text="Santana"
+        android:textColor="#2f8d4e"
+        android:gravity="top|center"
+        android:textSize="14pt"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/btnGabby"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/gabby"
+        android:text="Gabby"
+        android:textColor="#2db7ea"
+        android:gravity="top|center"
+        android:textSize="14pt"/>
+
+    </LinearLayout>
+</LinearLayout>
