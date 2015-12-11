@@ -20,7 +20,8 @@ public class activity_biography extends AppCompatActivity {
         mBioText.setTypeface(typeface);
         switch (name) {
             case "Lucas":
-                mBioText.setText("Lucas");
+                mBioText.setText("Caring, kind, helpful, and friendly. Brother of 2 holy terrors. Lover of baseball,football,and soccer.Who feels happy,sand,angry, and silly.Who needs a little more friends,who fears darkness and big lakes etc. And who would like to go to " +
+                        "world in lego robotics when it's my first year");
                 break;
             case "Luca":
                 mBioText.setText("I like Lego programming\n I love math\n favorite food is chocolate pie.");
@@ -29,7 +30,7 @@ public class activity_biography extends AppCompatActivity {
                 mBioText.setText("I am a girl on the green pieces FLL team\nI like video games and ice cream cake\nI like superheros, hoodies, and masks\nI am also a derp \n（。々°）\nI have an interest in creepy pasta");
                 break;
             case "Adrian":
-                mBioText.setText("Adrian");
+                mBioText.setText("I have once visited France on a business meeting with Microsoft. I am learning to program professionally, and have some friends in the business.");
                 break;
             case "Aidan":
                 mBioText.setText("I am Aidan Gaskill, I like video games,mental puzzles,and hanging out with friends.");
