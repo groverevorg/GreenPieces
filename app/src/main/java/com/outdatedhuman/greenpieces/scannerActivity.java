@@ -1,13 +1,12 @@
 package com.outdatedhuman.greenpieces;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.app.Activity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
@@ -18,6 +17,7 @@ public class scannerActivity extends Activity implements View.OnClickListener{
     private TextView barcodeValue;
     private Button mScanButton;
     private Button mEmailButton;
+    private String barcodeNum;
     private static final int RC_BARCODE_CAPTURE = 9001;
     private static final String TAG = "BarcodeMain";
 
@@ -34,6 +34,15 @@ public class scannerActivity extends Activity implements View.OnClickListener{
         mScanButton.setTypeface(typeface);
         mEmailButton = (Button) findViewById(R.id.send_email);
         mEmailButton.setTypeface(typeface);
+        mEmailButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+                    public void onClick(View v) {
+                Intent i = new Intent(scannerActivity.this, EmailActivity.class);
+                i.putExtra("barcode", barcodeNum);
+                startActivity(i);
+                finish();
+            }
+        });
         mScanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,12 +109,22 @@ public class scannerActivity extends Activity implements View.OnClickListener{
                 if (data != null) {
                     Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
                     statusMessage.setText(R.string.barcode_success);
-                    if (barcode.displayValue == "0132018582")
-                        barcodeValue.setText(barcode.displayValue);
+                    if (barcode.displayValue.equals("713733818001")) {
+                        barcodeValue.setText(barcode.displayValue + "\nMeijer Brand Cosmic Stars Cereal 28oz");
+                        barcodeNum = barcode.displayValue;
+                        mEmailButton.setVisibility(View.VISIBLE);
+                    }
+                    else if (barcode.displayValue.equals("096619998876"))
+                    {
+                        barcodeValue.setText(barcode.displayValue + "\nKirkland Brand Drinking Water 8oz");
+                        barcodeNum = barcode.displayValue;
+                        mEmailButton.setVisibility(View.VISIBLE);
+                    }
+
                     else
                     {
                         barcodeValue.setText(barcode.displayValue + " not found, contact the company");
-                        mEmailButton.setVisibility(View.VISIBLE);
+
                     }
                     Log.d(TAG, "Barcode read: " + barcode.displayValue);
                 } else {

@@ -27,10 +27,6 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.api.CommonStatusCodes;
-import com.outdatedhuman.greenpieces.CameraSource;
-import com.outdatedhuman.greenpieces.CameraSourcePreview;
-
-import com.outdatedhuman.greenpieces.GraphicOverlay;
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.barcode.Barcode;
 import com.google.android.gms.vision.barcode.BarcodeDetector;
@@ -70,7 +66,7 @@ public class BarcodeCaptureActivity extends AppCompatActivity {
         mGraphicOverlay = (GraphicOverlay<BarcodeGraphic>) findViewById(R.id.graphicOverlay);
 
         // read parameters from the intent used to launch the activity.
-        boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, false);
+        boolean autoFocus = getIntent().getBooleanExtra(AutoFocus, true);
         boolean useFlash = getIntent().getBooleanExtra(UseFlash, false);
 
         // Check for the camera permission before accessing the camera.  If the
@@ -85,11 +81,30 @@ public class BarcodeCaptureActivity extends AppCompatActivity {
         gestureDetector = new GestureDetector(this, new CaptureGestureListener());
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
 
-        Snackbar.make(mGraphicOverlay, "Tap to capture. Pinch/Stretch to zoom",
-                Snackbar.LENGTH_INDEFINITE)
-                .show();
+        getResult();
     }
+    private boolean getResult(){
+        BarcodeGraphic graphic = null;
+        Barcode barcode = null;
+        while(graphic == null) {
+            graphic = mGraphicOverlay.getFirstGraphic();
 
+            if (graphic != null) {
+                barcode = graphic.getBarcode();
+                if (barcode != null) {
+                    Intent data = new Intent();
+                    data.putExtra(BarcodeObject, barcode);
+                    setResult(CommonStatusCodes.SUCCESS, data);
+                    finish();
+                }
+
+            }
+        }
+
+
+
+        return barcode != null;
+    }
     /**
      * Handles the requesting of the camera permission.  This includes
      * showing a "Snackbar" message of why the permission is needed then

@@ -27,4 +27,8 @@
     <string name="code5">Number: 5\nName: PP\nRecyclable: Yes\nCharacteristics: Used in yogurt containers, ketchup bottles, medicine bottles\nRecycled Into: Brooms, ice scrapers, bicycle racks</string>
     <string name="code6">Number: 6\nName: Styrofoam\nRecyclable: No\nCharacteristics: Used in egg cartons, meat trays, disposable cups and plates\nRecycled Into: egg cartons, foam packing, insulation</string>
     <string name="code7">Number: 7\nName: Other\nRecyclable: No\nCharacteristics: Plastics that don\'t fit into other categories\nRecycled Into: Plastic lumber and other custom-made products</string>
+
+    <string name="title_activity_email">EmailActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

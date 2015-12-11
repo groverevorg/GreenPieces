@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.outdatedhuman.greenpieces.activity_biography"
+    android:background="#764497">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:text="New Text"
+        android:id="@+id/txtBio"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2db7ea"
+        android:textSize="18pt"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="#fcd22a"
+        android:text="Back"
+        android:textColor="#2f8d4e"
+        android:textSize="22pt"
+        android:id="@+id/backButton"/>
+</LinearLayout>

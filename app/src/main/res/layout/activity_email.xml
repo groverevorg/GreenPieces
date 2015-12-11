@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#764497"
+             tools:context="com.outdatedhuman.greenpieces.EmailActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/linearLayout1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fcd22a"/>
+
+        <EditText
+            android:id="@+id/editTextTo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|none"
+            android:textColor="#2db7ea"
+            android:textSize="10pt"
+            android:enabled="true"
+            android:editable="true">
+
+            <requestFocus />
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fcd22a"/>
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2db7ea"
+            android:textSize="10pt"
+            android:enabled="true"
+            android:editable="true"
+            android:inputType="none">
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fcd22a"/>
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="none|textMultiLine"
+            android:lines="10"
+            android:textSize="10pt"
+            android:editable="false"
+            android:textIsSelectable="false"
+            android:textColor="#2db7ea"
+            android:enabled="true"/>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:background="#fcd22a"
+            android:textSize="16pt"
+            android:textColor="#2f8d4e"/>
+
+    </LinearLayout>
+
+</FrameLayout>
