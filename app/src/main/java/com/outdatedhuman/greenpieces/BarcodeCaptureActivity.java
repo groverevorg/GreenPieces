@@ -81,30 +81,9 @@ public class BarcodeCaptureActivity extends AppCompatActivity {
         gestureDetector = new GestureDetector(this, new CaptureGestureListener());
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
 
-        getResult();
+
     }
-    private boolean getResult(){
-        BarcodeGraphic graphic = null;
-        Barcode barcode = null;
-        while(graphic == null) {
-            graphic = mGraphicOverlay.getFirstGraphic();
 
-            if (graphic != null) {
-                barcode = graphic.getBarcode();
-                if (barcode != null) {
-                    Intent data = new Intent();
-                    data.putExtra(BarcodeObject, barcode);
-                    setResult(CommonStatusCodes.SUCCESS, data);
-                    finish();
-                }
-
-            }
-        }
-
-
-
-        return barcode != null;
-    }
     /**
      * Handles the requesting of the camera permission.  This includes
      * showing a "Snackbar" message of why the permission is needed then
